@@ -1,0 +1,12 @@
+duties:
+  logging:
+    cron: "* * * * *"
+    prompt: |
+      nel file {file_path} aggiungi righe di logging di livello appropriato dove utile.
+      Se mancano, ricordati di aggiungere le righe per creare il logger:
+      import logging
+      logger = logging.getLogger(__name__)
+    files:
+      include:
+        - "**/*.py"
+    
